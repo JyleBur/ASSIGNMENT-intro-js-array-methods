@@ -16,7 +16,7 @@ export const card = (object) => {
       <b>${object.price <= 0 ? 'FREE' : `$${object.price}`}</b><br />
       ${object.inCart ? `<button type="button" class="btn">
       <i id="fav-btn--${object.id}" class="fa fa-shopping-cart" style="color:gray;font-size:35px;"></i>
-    </button>` : 
+    </button>` :
       `<button type="button" class="btn">
         <i id="fav-btn--${object.id}" class="fa fa-cart-plus" style="color:plum;font-size:35px;"></i>
       </button>`}
@@ -31,8 +31,8 @@ export const card = (object) => {
         data-bs-toggle="modal" 
         data-bs-target="#modal-${object.id}"
       >
-        More Info <i class="fa ${object.youTubeId ? `fa-play-circle` : 
-        `fa-book`}" 
+        More Info <i class="fa ${object.youTubeId ? `fa-play-circle` :
+      `fa-book`}" 
         style="color:black"></i>
       </button>
     </div>
